@@ -196,7 +196,7 @@
                 "
                 src="./images/product-designer.jpg"
                 alt="На фото Product Designer Ігор Дем'яненко"
-                width="270"
+                min-width="270"
                 class="team__member-image"
               />
 
@@ -238,9 +238,13 @@
 
             <li class="team__card">
               <img
+                srcset="
+                  ./images/frontend-developer-450.jpg    1x,
+                  ./images/frontend-developer-450@2x.jpg 2x
+                "
                 src="./images/frontend-developer.jpg"
                 alt="На фото Frontend Developer Ольга Рєпіна"
-                width="270"
+                min-width="270"
                 class="team__member-image"
               />
 
@@ -282,9 +286,10 @@
 
             <li class="team__card">
               <img
+                srcset="./images/marketing-450.jpg 1x, ./images/marketing-450@2x.jpg 2x"
                 src="./images/marketing.jpg"
                 alt="На фото Marketing Specialist Микола Тарасов"
-                width="270"
+                min-width="270"
                 class="team__member-image"
               />
 
@@ -326,9 +331,10 @@
 
             <li class="team__card">
               <img
+                srcset="./images/ui-designer-450.jpg 1x, ./images/ui-designer-450@2x.jpg 2x"
                 src="./images/ui-designer.jpg"
                 alt="На фото UI Designer Михайло Єрмаков"
-                width="270"
+                min-width="270"
                 class="team__member-image"
               />
 
@@ -373,7 +379,7 @@
     </main>
 
     <!-- "Regular clients" section -->
-    <!-- <section class="section regular-clients">
+    <section class="section regular-clients">
       <div class="container">
         <h2 class="section-title">Постійні клієнти</h2>
 
@@ -427,10 +433,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Footer -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="page-footer__general-flex">
           <div class="page-footer__general-subflex">
@@ -445,7 +451,7 @@
                 <li>
                   <a
                     href="mailto:info@devstudio.com"
-                    class="link contacts__link contacts__link--footer page-footer__contacts-margin"
+                    class="link contacts__link contacts__link--footer page-footer__mail-margin"
                     >info@devstudio.com
                   </a>
                 </li>
@@ -460,7 +466,7 @@
             <div class="page-footer__join-us">
               <p class="page-footer__header">приєднуйтесь</p>
 
-              <ul class="list socials-block">
+              <ul class="list socials-block socials-block--mobile-footer">
                 <li>
                   <a href="#" class="socials-block__link socials-block__link--footer-colors">
                     <svg width="20," height="20">
@@ -519,7 +525,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
@@ -581,7 +587,7 @@
               <svg class="modal__custom-checkbox" width="16" height="15">
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
-              <div>
+              <div class="modal__contract-conditions">
                 Погоджуюся з розсилкою та приймаю
                 <a href="#" class="modal__link">Умови договору</a>
               </div>

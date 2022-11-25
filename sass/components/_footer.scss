@@ -5,17 +5,17 @@
   background-color: var(--hero-background-color);
 }
 
-.page-footer__general-flex {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+// .page-footer__general-flex {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+// }
 
-.page-footer__general-subflex {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
-}
+// .page-footer__general-subflex {
+//   display: flex;
+//   align-items: baseline;
+//   gap: 70px;
+// }
 
 .logo--footer {
   display: inline-block;
@@ -29,7 +29,7 @@
 }
 
 .page-footer__address {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-size: 14px;
   font-style: normal;
@@ -49,9 +49,19 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-footer__contacts-margin {
+.page-footer__mail-margin {
   display: inline-block;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+.page-footer__contact-us {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.page-footer__join-us {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .page-footer__header {
@@ -78,7 +88,18 @@
   }
 }
 
+.socials-block--mobile-footer {
+  justify-content: center;
+}
+
+.page-footer__subscribe-mailing {
+  text-align: center;
+}
+
 .button--footer {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 28px;
   padding-left: 28px;
   display: flex;
@@ -96,10 +117,10 @@
   }
 }
 
-.page-footer__input-button {
-  display: flex;
-  gap: 12px;
-}
+// .page-footer__input-button {
+//   display: flex;
+//   gap: 12px;
+// }
 
 .page-footer__email-input {
   padding: 15px 16px;
