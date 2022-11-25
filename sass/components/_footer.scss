@@ -1,0 +1,116 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--hero-background-color);
+}
+
+.page-footer__general-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.page-footer__general-subflex {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.logo--footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.logo--reversed {
+  color: var(--accent-color);
+}
+
+.page-footer__address {
+  margin-bottom: 9px;
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+
+  color: var(--primary-white-color);
+}
+
+.contacts__link--footer {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer__contacts-margin {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.page-footer__header {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.socials-block__link--footer-colors {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+
+  transition-property: fill, background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
+}
+
+.button--footer {
+  padding-right: 28px;
+  padding-left: 28px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  fill: var(--primary-white-color);
+
+  transition-property: fill, color, background-color;
+
+  &:hover,
+  &:focus {
+    color: var(--primaty-text-color);
+    background-color: var(--button-color);
+    fill: var(--primaty-text-color);
+  }
+}
+
+.page-footer__input-button {
+  display: flex;
+  gap: 12px;
+}
+
+.page-footer__email-input {
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+
+  background-color: var(--hero-background-color);
+  color: var(--footer-placeholder);
+  border: 1px solid var(--footer-input-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}

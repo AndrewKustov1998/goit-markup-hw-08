@@ -1,0 +1,36 @@
+.specialty {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.specialty__list {
+  display: flex;
+  gap: 30px;
+}
+
+.specialty__image {
+  display: block;
+}
+
+.specialty__item {
+  position: relative;
+}
+
+.specialty__label {
+  position: absolute;
+  padding: 27px 0;
+  bottom: 0;
+
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

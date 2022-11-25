@@ -1,0 +1,19 @@
+.socials-block {
+  display: flex;
+  gap: 10px;
+}
+
+.socials-block__link {
+  display: flex;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
