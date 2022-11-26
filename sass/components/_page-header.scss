@@ -1,17 +1,20 @@
 .page-header {
   border-bottom: none;
-  // border-bottom: 1px solid var(--header-border-color);
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid var(--header-border-color);
+  }
 }
 
 .page-header__flex-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  min-height: 60px;
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
 }
 
 .page-header__burger-menu {
@@ -35,19 +38,78 @@
 .page-header__navigation {
   display: none;
 
-  @media screen and (min-width: 768px) {
-    display: block;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 85px;
+    flex-grow: 1;
   }
 
-  @media screen and (min-width: 1200px) {
-    display: block;
+  @media (min-width: 1200px) {
+    margin-left: 95px;
+  }
+}
+
+.page-header__navigation-list {
+  display: flex;
+  gap: 50px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+
+.page-header__navigation-link {
+  color: var(--primaty-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.page-header__navigation-link--current {
+  position: relative;
+  color: var(--accent-color);
+  padding-bottom: 31px;
+
+  &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: var(--accent-color);
+    border-radius: 2px;
   }
 }
 
 .page-header__contacts {
   display: flex;
-  gap: 50px;
-  margin-left: auto;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .contacts__link--header {
@@ -55,6 +117,7 @@
   align-items: center;
   gap: 10px;
 
+  font-size: 12px;
   fill: var(--secondary-text-color);
 
   transition-property: color, fill;
@@ -64,5 +127,9 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }

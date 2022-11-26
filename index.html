@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
   </head>
 
   <body>
@@ -36,20 +36,23 @@
 
           <div class="page-header__navigation">
             <nav>
-              <ul class="list">
-                <div class="navigation">
-                  <li>
-                    <a href="./index.html" class="link navigation__link navigation__link--current">
-                      Студія
-                    </a>
-                  </li>
-                  <li>
-                    <a href="./portfolio.html" class="link navigation__link">Портфоліо </a>
-                  </li>
-                  <li>
-                    <a href="#" class="link navigation__link">Контакти </a>
-                  </li>
-                </div>
+              <ul class="list page-header__navigation-list">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="link page-header__navigation-link page-header__navigation-link--current"
+                  >
+                    Студія
+                  </a>
+                </li>
+                <li>
+                  <a href="./portfolio.html" class="link page-header__navigation-link">
+                    Портфоліо
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link page-header__navigation-link">Контакти</a>
+                </li>
               </ul>
             </nav>
 
@@ -189,16 +192,28 @@
 
           <ul class="list team__card-list">
             <li class="team__card">
-              <img
-                srcset="
-                  ./images/product-designer-450.jpg    1x,
-                  ./images/product-designer-450@2x.jpg 2x
-                "
-                src="./images/product-designer.jpg"
-                alt="На фото Product Designer Ігор Дем'яненко"
-                min-width="270"
-                class="team__member-image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/product-designer-450.jpg    1x,
+                    ./images/product-designer-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/product-designer-354.jpg    1x,
+                    ./images/product-designer-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/product-designer.jpg"
+                  alt="На фото Product Designer Ігор Дем'яненко"
+                  min-width="270"
+                  class="team__member-image"
+                />
+              </picture>
 
               <p class="team__member-name">Ігор Дем'яненко</p>
 
@@ -237,7 +252,29 @@
             </li>
 
             <li class="team__card">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontend-developer-450.jpg    1x,
+                    ./images/frontend-developer-450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer-354.jpg    1x,
+                    ./images/frontend-developer-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/frontend-developer.jpg"
+                  alt="На фото Frontend Developer Ольга Рєпіна"
+                  min-width="270"
+                  class="team__member-image"
+                />
+              </picture>
+              <!-- <img
                 srcset="
                   ./images/frontend-developer-450.jpg    1x,
                   ./images/frontend-developer-450@2x.jpg 2x
@@ -246,7 +283,7 @@
                 alt="На фото Frontend Developer Ольга Рєпіна"
                 min-width="270"
                 class="team__member-image"
-              />
+              /> -->
 
               <p class="team__member-name">Ольга Рєпіна</p>
 
@@ -285,13 +322,22 @@
             </li>
 
             <li class="team__card">
-              <img
-                srcset="./images/marketing-450.jpg 1x, ./images/marketing-450@2x.jpg 2x"
-                src="./images/marketing.jpg"
-                alt="На фото Marketing Specialist Микола Тарасов"
-                min-width="270"
-                class="team__member-image"
-              />
+              <picture>
+                <source
+                  srcset="./images/marketing-450.jpg 1x, ./images/marketing-450@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/marketing-354.jpg 1x, ./images/marketing-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/marketing.jpg"
+                  alt="На фото Marketing Specialist Микола Тарасов"
+                  min-width="270"
+                  class="team__member-image"
+                />
+              </picture>
 
               <p class="team__member-name">Микола Тарасов</p>
 
@@ -330,13 +376,22 @@
             </li>
 
             <li class="team__card">
-              <img
-                srcset="./images/ui-designer-450.jpg 1x, ./images/ui-designer-450@2x.jpg 2x"
-                src="./images/ui-designer.jpg"
-                alt="На фото UI Designer Михайло Єрмаков"
-                min-width="270"
-                class="team__member-image"
-              />
+              <picture>
+                <source
+                  srcset="./images/ui-designer-450.jpg 1x, ./images/ui-designer-450@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/ui-designer-354.jpg 1x, ./images/ui-designer-354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./images/ui-designer.jpg"
+                  alt="На фото UI Designer Михайло Єрмаков"
+                  min-width="270"
+                  class="team__member-image"
+                />
+              </picture>
 
               <p class="team__member-name">Михайло Єрмаков</p>
 
@@ -439,7 +494,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__general-flex">
-          <div class="page-footer__general-subflex">
+          <div class="page-footer__info">
             <div class="page-footer__contact-us">
               <a href="./index.html" class="logo logo--footer">
                 <span class="logo logo--reversed">Web</span>Studio

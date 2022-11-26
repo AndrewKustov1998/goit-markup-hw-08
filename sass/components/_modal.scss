@@ -8,13 +8,15 @@
   max-width: 450px;
   width: calc(100% - 30px);
   padding: 40px;
-  // width: 528px;
-  // height: 581px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
 
@@ -72,12 +74,10 @@
 
 .modal__input {
   padding: 11px 11px 11px 40px;
-  // padding: 12px 12px 12px 42px;
   border: 0;
 
   outline: none;
   width: 100%;
-  // width: 448px;
   height: 40px;
   font-size: 12px;
   line-height: 1.17;
@@ -94,6 +94,10 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 12px 12px 42px;
   }
 }
 
@@ -173,6 +177,11 @@
   font-size: 12px;
   line-height: 1.17;
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal__link {
@@ -209,8 +218,8 @@
 
   display: block;
   margin: 30px auto 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 52px;
+  padding-right: 52px;
 
   &:hover,
   &:focus {
