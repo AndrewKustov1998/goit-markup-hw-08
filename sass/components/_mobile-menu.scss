@@ -21,7 +21,7 @@
   }
 
   &__container {
-    padding: 40px 48px;
+    padding: 48px 40px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -29,6 +29,10 @@
     min-height: 100%;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 479px) {
+      padding: 48px 30px;
+    }
   }
 
   &__close-button {
@@ -59,16 +63,19 @@
   }
 
   &__nav-link {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.17;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
     letter-spacing: 0.02em;
-
     color: var(--primaty-text-color);
 
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: 35px;
     }
   }
 
@@ -78,22 +85,35 @@
 
   &__tel {
     margin-bottom: 32px;
-    font-size: 25px;
-    line-height: 1.18;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+      font-size: 25px;
+      margin-bottom: 22px;
+    }
   }
 
   &__mail {
-    font-size: 25px;
-    line-height: 1.17;
+    padding-bottom: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
-    padding-bottom: 64px;
 
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 479px) {
+      font-size: 20px;
     }
   }
 
@@ -103,11 +123,19 @@
 
   &__socials-item {
     font-weight: 500;
-    font-size: 13px;
-    line-height: 1.22;
+    font-size: 12px;
+    line-height: 1.222;
     letter-spacing: 0.02em;
     color: var(--accent-color);
     padding-right: 10px;
+
+    @media screen and (min-width: 375px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   &__socials-border {
