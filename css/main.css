@@ -444,13 +444,14 @@ img {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 1.166;
   text-decoration: none;
   color: var(--primary-black-color);
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    line-height: 1.192;
   }
 }
 
@@ -495,12 +496,7 @@ img {
 }
 
 .page-header {
-  border-bottom: none;
-}
-@media screen and (min-width: 768px) {
-  .page-header {
-    border-bottom: 1px solid var(--header-border-color);
-  }
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .page-header__flex-container {
@@ -515,6 +511,8 @@ img {
 @media screen and (max-width: 767px) {
   .page-header__logo {
     margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -563,12 +561,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  padding-top: 31px;
-  padding-bottom: 31px;
 }
 @media (min-width: 768px) {
   .page-header__navigation-list {
     margin-right: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 
@@ -963,6 +961,17 @@ img {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 40px;
+    max-width: 330px;
+  }
+}
 
 .portfolio__filter-button {
   padding: 6px 25px;
@@ -971,7 +980,7 @@ img {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   color: var(--primaty-text-color);
   background-color: var(--button-color);
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
@@ -989,14 +998,30 @@ img {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.portfolio__filter-button--current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
 
 .portfolio__projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__projects-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__project-card {
@@ -1021,6 +1046,10 @@ img {
 
 .portfolio__card-image {
   display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio__description-overlay {
