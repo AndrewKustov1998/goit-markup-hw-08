@@ -9,14 +9,6 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
-
-    <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
   </head>
 
   <body>
@@ -108,7 +100,6 @@
                   srcset="./images/img1-portfolio-450.jpg 1x, ./images/img1-portfolio-450@2x.jpg 2x"
                   src="./images/img1-portfolio.jpg"
                   alt="Ноутбук з відчиненою веб-сторінкою"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -128,9 +119,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img2-portfolio-450.jpg 1x, ./images/img2-portfolio-450@2x.jpg 2x"
                   src="./images/img2-portfolio.jpg"
                   alt="Два баскетболісти грають у баскетбол"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -150,9 +141,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img3-portfolio-450.jpg 1x, ./images/img3-portfolio-450@2x.jpg 2x"
                   src="./images/img3-portfolio.jpg"
                   alt="Логотип ресторану Seafood"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -172,9 +163,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img4-portfolio-450.jpg 1x, ./images/img4-portfolio-450@2x.jpg 2x"
                   src="./images/img4-portfolio.jpg"
-                  alt="Комп'ютерні навушники"
-                  width="370"
+                  alt="Логотип комп'ютерні навушники"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -194,9 +185,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img5-portfolio-450.jpg 1x, ./images/img5-portfolio-450@2x.jpg 2x"
                   src="./images/img5-portfolio.jpg"
                   alt="Дві коробки: біла та червона"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -216,9 +207,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
-                  src="./images/img6-portfolio.jpg"
-                  alt="iMac з відчиненою веб-сторінкою"
-                  width="370"
+                  srcset="./images/img6-portfolio-450.jpg 1x, ./images/img6-portfolio-450@2x.jpg 2x"
+                  src="./images/img-portfolio.jpg"
+                  alt="iMac з відчи6неною веб-сторінкою"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -238,9 +229,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img7-portfolio-450.jpg 1x, ./images/img7-portfolio-450@2x.jpg 2x"
                   src="./images/img7-portfolio.jpg"
                   alt="Розворот журналу"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -260,9 +251,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img8-portfolio-450.jpg 1x, ./images/img8-portfolio-450@2x.jpg 2x"
                   src="./images/img8-portfolio.jpg"
                   alt="Етикетка з логотипом компанії"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -282,9 +273,9 @@
             <li class="portfolio__project-card">
               <div class="portfolio__image-div">
                 <img
+                  srcset="./images/img9-portfolio-450.jpg 1x, ./images/img9-portfolio-450@2x.jpg 2x"
                   src="./images/img9-portfolio.jpg"
                   alt="Людина працює за ноутбуком"
-                  width="370"
                   class="portfolio__card-image"
                 />
                 <div class="portfolio__description-overlay">
@@ -395,6 +386,51 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+      <div class="mobile-menu__container">
+        <button class="mobile-menu__close-button js-close-menu" type="button">
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="list mobile-menu__nav-list">
+          <li>
+            <a class="link mobile-menu__nav-link mobile-menu__nav-link--current" href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li><a class="link mobile-menu__nav-link" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="link mobile-menu__nav-link" href="#">Контакти</a></li>
+        </ul>
+
+        <ul class="list">
+          <li href="tel:380961111111" class="mobile-menu__tel">+38 096 111 11 11</li>
+          <li href="mailto:info@devstudio.com" class="mobile-menu__mail">info@devstudio.com</li>
+        </ul>
+
+        <ul class="list mobile-menu__socials-list">
+          <li>
+            <a class="link mobile-menu__socials-item" href="#"
+              >Instagram <span class="mobile-menu__socials-border"></span
+            ></a>
+          </li>
+          <li>
+            <a class="link mobile-menu__socials-item" href="#"
+              >Twitter <span class="mobile-menu__socials-border"></span
+            ></a>
+          </li>
+          <li>
+            <a class="link mobile-menu__socials-item" href="#"
+              >Facebook <span class="mobile-menu__socials-border"></span
+            ></a>
+          </li>
+          <li><a class="link mobile-menu__socials-item" href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
 
     <script src="./js/mobile-menu.js"></script>
   </body>
